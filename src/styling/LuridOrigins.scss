@@ -5,6 +5,19 @@ $red: rgb(201, 12, 12);
 
 body {
     background: $black;
-    color:$red;
-    @include fontB(25px);
+
+}
+
+.topper {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:800px;
+    margin:auto;
+    h2 {
+        color:$red;
+        @include fontB();
+        font-size:20px;
+    }
 }
