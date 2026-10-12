@@ -1,7 +1,10 @@
 @import "./mixins";
 
 $black: rgb(24, 24, 24);
+$red: rgb(201, 12, 12);
 
 body {
     background: $black;
+    color:$red;
+    @include fontB(25px);
 }

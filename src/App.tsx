@@ -1,8 +1,10 @@
 import './styling/LuridOrigins.css'
+import Topper from './comps/LOTopper'
 function App() {
+
   return (
     <>
-      <div>THIS IS WORKING</div>
+      <Topper head="DARK MEDIA. DISTURBING ORIGINS" />
     </>
   )
 }
