@@ -5,8 +5,8 @@ $red: rgb(201, 12, 12);
 
 body {
     background: $black;
-
 }
+* {box-sizing:border-box;}
 
 .topper {
     display:flex;
@@ -24,5 +24,19 @@ body {
         color:$red;
         @include fontB();
         font-size:calc(11px + 2vw);
+    }
+}
+.movies {
+    width:95%;
+    height:auto;
+    margin:auto;
+    padding:10px;
+    color:$red;
+    ul {
+        padding:0px;
+        margin:0px;
+        display:flex;
+        flex-direction:row;
+        gap:10px;
     }
 }

@@ -2,6 +2,10 @@ body {
   background: rgb(24, 24, 24);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .topper {
   display: flex;
   flex-direction: column;
@@ -21,4 +25,19 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: calc(11px + 2vw);
+}
+
+.movies {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  padding: 10px;
+  color: rgb(201, 12, 12);
+}
+.movies ul {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }/*# sourceMappingURL=LuridOrigins.css.map */
