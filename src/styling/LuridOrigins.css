@@ -50,6 +50,17 @@ body {
   align-items: center;
   justify-content: start;
 }
+.movies ul li img {
+  border: 5px solid rgb(201, 12, 12);
+  position: relative;
+  opacity: 0.4;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.movies ul li img:hover {
+  opacity: 1;
+  transition: all 0.5s;
+}
 .movies ul li h3 {
   font-family: "IM Fell English", serif;
   font-weight: 400;
