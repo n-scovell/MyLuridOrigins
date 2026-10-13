@@ -37,7 +37,20 @@ body {
 .movies ul {
   padding: 0px;
   margin: 0px;
+  list-style-type: none;
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+  gap: 5px;
+}
+.movies ul li {
+  outline: 1px solid rgb(201, 12, 12);
+  height: 270px;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
 }/*# sourceMappingURL=LuridOrigins.css.map */

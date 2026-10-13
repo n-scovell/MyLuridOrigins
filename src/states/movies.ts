@@ -4,6 +4,7 @@ import { persist } from 'zustand/middleware'
 export interface Movie {
   id: number
   movie: string
+  year: number
   watched: boolean
 }
 
@@ -31,6 +32,11 @@ const useStore = create<MovieState>()(
           }
           const data: Movie[] = await response.json()
           const filtered = data.filter((item) => item.watched === true)
+          filtered.sort((a: Movie, b: Movie) => {
+            const yearA = a.year;
+            const yearB = b.year;
+            return yearA - yearB;
+          });
           set({ movies: filtered, loading: false, count: 1 })
         } catch (error) {
           const errorMessage =

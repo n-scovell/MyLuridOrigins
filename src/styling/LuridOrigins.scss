@@ -35,11 +35,19 @@ body {
     ul {
         padding:0px;
         margin:0px;
-        display:flex;
-        flex-direction:row;
-        gap:10px;
+        list-style-type:none;
+        display: inline-grid;
+        grid-template-columns: repeat(5, 1fr); 
+        padding: 10px;
+        gap: 5px;
         li {
-            
+            outline:1px solid $red;
+            height:270px;
+            @include fontB();
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:start;
         }
     }
 }
