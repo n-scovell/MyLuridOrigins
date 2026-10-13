@@ -23,7 +23,6 @@ const useStore = create<MovieState>()(
       loading: false,
       error: null,
       fetchMovies: async () => {
-        alert('hey')
         set({ loading: true, error: null })
         try {
           const response = await fetch('https://lurid-origins-api.vercel.app/api/movies')
