@@ -39,18 +39,22 @@ body {
   margin: 0px;
   list-style-type: none;
   display: inline-grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 10px;
-  gap: 5px;
+  gap: 15px;
 }
 .movies ul li {
-  outline: 1px solid rgb(201, 12, 12);
-  height: 270px;
-  font-family: "IM Fell English", serif;
-  font-weight: 400;
-  font-style: normal;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
+}
+.movies ul li h3 {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }/*# sourceMappingURL=LuridOrigins.css.map */

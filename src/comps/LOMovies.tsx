@@ -24,8 +24,8 @@ export default function movies() {
         <ul>
         {movies.map((m: Movie, index: number) => (
         <li key={index}>
-          <img src={`/images/processed/thumb/${getFile(m.movie, m.year)}.jpg`} width='90' />
-          {m.movie}
+          <img src={`/images/processed/thumb/${getFile(m.movie, m.year)}.jpg`} height='150' loading="lazy" />
+          <h3>{m.movie}</h3>
         </li>
       ))}
         </ul>
