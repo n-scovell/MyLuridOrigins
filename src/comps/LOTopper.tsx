@@ -7,7 +7,7 @@ export default function topper(props: Ports) {
   return (
     <>
       <section className="topper">
-        <img src="LuridOrigins_Logo.png" alt="Lurid Origins" width="100%" />
+        <img src="LuridOrigins_Logo.png" alt="Lurid Origins" width="700" loading='lazy' />
         <h2>{props.head} </h2>
       </section>
     </>
