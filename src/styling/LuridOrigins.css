@@ -56,7 +56,7 @@ body {
 .movies ul li img {
   border: 5px solid rgb(201, 12, 12);
   position: relative;
-  opacity: 0.4;
+  opacity: 0.6;
   transition: all 0.5s;
   cursor: pointer;
 }

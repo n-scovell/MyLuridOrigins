@@ -26,7 +26,7 @@ export default function movies() {
         <li key={index}>
 
             <img src={`/images/processed/thumb/${getFile(m.movie, m.year)}.jpg`} height='120' loading="lazy" />
-          <h3>{m.movie}</h3>
+          <h3>{m.movie}<br/>{m.year}</h3>
         </li>
       ))}
         </ul>
