@@ -28,6 +28,45 @@ body {
         font-size:calc(11px + 2vw);
     }
 }
+
+.myForm {
+    color:$white;
+    font-size:25px;
+    width:500px;
+    margin:auto;
+    text-align:center;
+    padding:10px;
+
+    div {
+        
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:start;
+        margin-bottom:11px;
+        label {
+            text-align:right;
+            width:100px;
+            margin-right:10px;
+        }
+        input {
+            flex:1;
+            height:50px;
+            padding:5px;
+            font-size:20px;
+        }
+    }
+    button {
+        padding:5px 25px;
+        border:none;
+        background:$red;
+        color:$white;
+        font-size:30px;
+        @include fontA();
+        cursor:pointer;
+        margin:auto;
+    }
+}
 .movies {
     width:95%;
     height:auto;
