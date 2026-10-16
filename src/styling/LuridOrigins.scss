@@ -29,6 +29,17 @@ body {
     }
 }
 
+.lo_bt {
+    background:transparent;
+    @include fontB();
+    padding:20px 33px;
+    @include boxA();
+    border:none;
+    color:$red;
+    font-size:20px;
+    cursor:pointer;
+}
+
 .myForm {
     color:$white;
     font-size:25px;
@@ -36,14 +47,20 @@ body {
     margin:auto;
     text-align:center;
     padding:10px;
-
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:1;
+    background:$black;
+    padding:30px 50px;
+    @include boxA();
     div {
-        
         display:flex;
         flex-direction:row;
         align-items:center;
         justify-content:start;
-        margin-bottom:11px;
+        margin-bottom:15px;
         label {
             text-align:right;
             width:100px;
@@ -51,20 +68,21 @@ body {
         }
         input {
             flex:1;
-            height:50px;
+            height:30px;
             padding:5px;
             font-size:20px;
         }
     }
     button {
-        padding:5px 25px;
+        width:100%;
+        padding:5px 15px;
         border:none;
         background:$red;
         color:$white;
         font-size:30px;
         @include fontA();
         cursor:pointer;
-        margin:auto;
+        margin:15px auto;
     }
 }
 .movies {

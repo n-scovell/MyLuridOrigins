@@ -1,7 +1,7 @@
 import './styling/LuridOrigins.css'
 import Topper from './comps/LOTopper'
 import Movies from './comps/LOMovies'
-// import { useState } from 'react';
+import { useState } from 'react';
 
 
 export interface Movie {
@@ -16,6 +16,11 @@ function App() {
 
   const now = new Date();
   const year = now.getFullYear(); 
+
+  const [status, setStatus] = useState(false)
+  const showForm = () => {
+    setStatus(status => !status)
+  }
 
   const handleSubmit = async (e: any) => {
     e.preventDefault(); 
@@ -44,7 +49,6 @@ function App() {
     }
   };
   const sendMovie = async (payload:any) => {
-    console.log(payload)
     try {
       const res = await fetch("https://lurid-origins-api.vercel.app/api/movies", {
         method: "POST",
@@ -66,6 +70,8 @@ function App() {
 
   return (
     <>
+      <button className="lo_bt" onClick={()=>showForm()}>ADD MOVIE</button>
+      {status && (
       <form className='myForm' onSubmit={handleSubmit}>
       <div>
         <label>Password:</label>
@@ -121,6 +127,7 @@ function App() {
       </div>
       <button type="submit">Submit</button>
     </form>
+          )}
       <Topper head="DARK MEDIA. DISTURBING ORIGINS" />
       <Movies />
     </>

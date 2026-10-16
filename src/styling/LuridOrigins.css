@@ -28,6 +28,22 @@ body {
   font-size: calc(11px + 2vw);
 }
 
+.lo_bt {
+  background: transparent;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px 33px;
+  background-image: url("boxBig.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+  border: none;
+  color: rgb(201, 12, 12);
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .myForm {
   color: rgb(231, 231, 231);
   font-size: 25px;
@@ -35,13 +51,24 @@ body {
   margin: auto;
   text-align: center;
   padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: rgb(24, 24, 24);
+  padding: 30px 50px;
+  background-image: url("boxBig.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 .myForm div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
 }
 .myForm div label {
   text-align: right;
@@ -50,12 +77,13 @@ body {
 }
 .myForm div input {
   flex: 1;
-  height: 50px;
+  height: 30px;
   padding: 5px;
   font-size: 20px;
 }
 .myForm button {
-  padding: 5px 25px;
+  width: 100%;
+  padding: 5px 15px;
   border: none;
   background: rgb(201, 12, 12);
   color: rgb(231, 231, 231);
@@ -64,7 +92,7 @@ body {
   font-weight: 100;
   font-style: normal;
   cursor: pointer;
-  margin: auto;
+  margin: 15px auto;
 }
 
 .movies {
