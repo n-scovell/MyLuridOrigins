@@ -22,7 +22,7 @@ function App() {
     const formData = new FormData(e.currentTarget); 
     const data = Object.fromEntries(formData.entries());
     let payload = {
-      action : 'asas',
+      action : data.password,
       movie : data.movie,
       director: data.director,
       year : Number(data.year),
